@@ -51,6 +51,9 @@ object casa {
  method cuentaQuePaga(_cuenta){
  	 cuenta = _cuenta
  }
+ method compra(dinero) {
+ 	 cuenta = cuenta.saldo() - dinero
+ }
  method derrocha(_compra) {
  	 
  }
