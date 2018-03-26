@@ -11,7 +11,7 @@ object cuentaDePepe {
 }
 
 object julian {
-	var saldo = 100
+	var saldo = 0
 	method saldo(){
 		return saldo
 	}
@@ -20,7 +20,7 @@ object julian {
 	}
 	method extraer(unaCantidadPesos){
 		saldo-= unaCantidadPesos
-		saldo-=if(saldo >= 5) 5 else 0
+		saldo-=if(saldo >= 5)5 else 0
 	}
 }
 
@@ -41,5 +41,18 @@ object papa {
 	method precioVenta(){
 		return 15.10
 	}
-	}
-	
+
+ }
+ 
+object casa {
+  var cuenta 
+  var compras
+  
+ method cuentaQuePaga(_cuenta){
+ 	 cuenta = _cuenta
+ }
+ method derrocha(_compra) {
+ 	 
+ }
+ 
+}	
