@@ -6,9 +6,9 @@ object cuentaDePepe {
 	method depositar(monto) { saldo += monto } 
 
 	method extraer(monto) { saldo -= monto }
-	
-
-}
+  }
+//if(salco<monto) {
+  //self.error("no hay saldo sufieciente")
 
 object julian {
 	var saldo = 0
@@ -46,16 +46,19 @@ object papa {
  
 object casa {
   var cuenta 
-  var compras
+  var compras = 0
   
  method cuentaQuePaga(_cuenta){
  	 cuenta = _cuenta
  }
  method compra(dinero) {
- 	 cuenta = cuenta.saldo() - dinero
+ 	  cuenta.extraer(dinero)
  }
- method derrocha(_compra) {
- 	 
+ method esDerrochona(){
+ 	 return compras > 5000
+ }
+ method _compras(){
+ 	return compras
  }
  
 }	

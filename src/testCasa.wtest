@@ -1,0 +1,12 @@
+import cuentas.*
+test "si una casa compra 10,entonces la cuenta de pepe configurada se le extrae 10" {
+    cuentaDePepe.depositar(100)
+    casa.cuentaQuePaga(cuentaDePepe)
+    casa.compra(10)
+	assert.equals(90,cuentaDePepe.saldo())
+ 
+}
+test "si la casa gasta mas de 5000 pesos,entonces es derrochona"{
+  
+  assert.that(casa.esDerrochona())
+}
