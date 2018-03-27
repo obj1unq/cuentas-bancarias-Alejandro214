@@ -7,7 +7,7 @@ object cuentaDePepe {
 
 	method extraer(monto) { saldo -= monto }
   }
-//if(salco<monto) {
+//if(salco<monto) { sd
   //self.error("no hay saldo sufieciente")
 
 object julian {
